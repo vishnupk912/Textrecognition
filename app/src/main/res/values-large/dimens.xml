@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="sp12">18sp</dimen>
+    <dimen name="sp14">21sp</dimen>
+    <dimen name="sp16">24sp</dimen>
+
+    <dimen name="ts1">1.5dp</dimen>
+    <dimen name="ts2">3dp</dimen>
+    <dimen name="ts4">6dp</dimen>
+    <dimen name="ts8">12dp</dimen>
+    <dimen name="ts12">18dp</dimen>
+    <dimen name="ts16">24dp</dimen>
+    <dimen name="ts20">30dp</dimen>
+    <dimen name="ts24">36dp</dimen>
+    <dimen name="ts32">48dp</dimen>
+    <dimen name="ts36">54dp</dimen>
+    <dimen name="ts40">60dp</dimen>
+    <dimen name="ts48">72dp</dimen>
+
+    <dimen name="design_navigation_icon_size" tools:override="true">30dp</dimen>
+
+    <dimen tools:override="true" name="design_navigation_icon_padding">12dp</dimen>
+
+    <dimen name="cat">150dp</dimen>
+    <dimen name="cat1">112.5dp</dimen>
+
+    <dimen name="img">225dp</dimen>
+    <dimen name="img6">450dp</dimen>
+
+</resources>

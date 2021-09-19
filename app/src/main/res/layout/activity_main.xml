@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/noimagelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/noimageview"
+                android:layout_width="@dimen/img6"
+                android:layout_height="@dimen/img6"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/noimage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please upload a image to recognize"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14"
+                android:fontFamily="@font/opensansregular"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/laydata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/buttonshape2"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/ts16"
+            android:layout_marginRight="@dimen/ts16"
+            android:layout_marginTop="@dimen/cat1"
+            android:layout_marginBottom="@dimen/cat1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark"
+
+                >
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="@dimen/ts32"
+                    android:layout_height="@dimen/ts32"
+                    android:src="@drawable/ic_close"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="@dimen/ts12"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ts12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp14"
+                    android:text="TEXT FROM IMAGE"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/opensansbold"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lottie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="@dimen/img6"
+                    android:layout_height="@dimen/img6"
+                    app:lottie_fileName="text.json"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+            </LinearLayout>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tvid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ts12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/opensansregular"
+
+                    />
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+            <ImageView
+                android:id="@+id/upload"
+                android:layout_width="@dimen/ts32"
+                android:layout_height="@dimen/ts32"
+                android:src="@drawable/ic_upload"
+                android:layout_gravity="right|top"
+                android:layout_margin="@dimen/ts12"
+                />
+            <ImageView
+                android:id="@+id/capture"
+                android:layout_width="@dimen/ts32"
+                android:layout_height="@dimen/ts32"
+                android:src="@drawable/ic_camera"
+                android:layout_gravity="right|top"
+                android:layout_margin="@dimen/ts12"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|center"
+            >
+
+            <LinearLayout
+                android:id="@+id/reco_text"
+                android:layout_width="@dimen/img6"
+                android:layout_height="@dimen/ts48"
+                android:background="@drawable/buttonshape1"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="@dimen/ts16"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recognize Text"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp14"
+                    android:fontFamily="@font/opensansbold"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
